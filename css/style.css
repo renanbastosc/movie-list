@@ -1,0 +1,96 @@
+body {
+  background-color: rgb(24, 22, 22);
+}
+
+h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.form-control,
+.form-control:focus,
+.input-group-text {
+  background: transparent;
+  border: none;
+  color: #fff;
+  outline: none;
+  box-shadow: none;
+}
+
+.topline {
+  background: #0a0a0a;
+  padding: 10px 0;
+}
+
+.topline__logo {
+  width: 20%;
+  height: 20%;
+}
+
+.topline__search {
+  margin-left: auto;
+  width: 200px;
+}
+
+.filters-section {
+  padding: 20px 0;
+  color: #fff;
+}
+
+.filters{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.filter-group{
+  min-width: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.filter[type="checkbox"] {
+  margin-right: 7px;
+}
+
+.movies-section .title {
+  color: #FF7300;
+  position: relative;
+  margin-bottom: 30px;
+}
+.movies-section .title:before,
+.movies-section .title:after {
+  position: absolute;
+  content: ' ';
+  left: 0;
+  bottom: -10px;
+  width: 130px;
+  height: 1px;
+  background: #ff7300;
+  z-index: 2;
+}
+.movies-section .title:after {
+  background: #565656;
+  width: 100%;
+  z-index: 1;
+}
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.movie {
+  width: calc(calc(100% / 5) - 10px);
+  margin: 5px;
+}
+.movie__title {
+  color: #fff;
+  font-size: 14px;
+}
+.movie__poster {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}

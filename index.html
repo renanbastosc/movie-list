@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Ingresso.com</title>
+</head>
+
+<body>
+	<header class="topline">
+		<div class="container d-flex">
+			<img src="img/logo.png" alt="Ingresso.com" class="topline__logo" width="200px" />
+
+			<div class="input-group topline__search">
+				<input type="text" class="form-control input-pesquisa filter-search" placeholder="Busque por filmes">
+				<div class="input-group-prepend botao-pesquisa">
+					<span class="input-group-text" id="basic-addon1">
+						<i class="fa fa-search"></i>
+					</span>
+				</div>
+			</div>
+			<select class="col-sm-3 form-control filter filter-city" id="city">
+				<option value="2" style='background-color: #0a0a0a;'>Rio de Janeiro</option>
+				<option value="1" style='background-color: #0a0a0a;'>São Paulo</option>
+			</select>
+		</div>
+	</header>
+
+	<section class="filters-section">
+		<div class="container">
+			<h2>Filmes</h2>
+			<div class="filters">
+				<label class="filter-group">
+					<input type="checkbox" class="filter filter-type" id="2d" value="Normal">2D
+				</label><label class="filter-group">
+					<input type="checkbox" class="filter filter-type" id="2d" value="Dublado">DUB
+				</label>
+				<label class="filter-group">
+					<input type="checkbox" class="filter filter-type" id="3d" value="3D">3D
+				</label>
+				<label class="filter-group">
+					<input type="checkbox" class="filter filter-type" id="dbox" value="D-Box">D-BOX
+				</label>
+				<label class="filter-group">
+					<input type="checkbox" class="filter filter-type" id="leg" value="Legendado">LEG
+				</label>
+				<label class="filter-group">
+					<input type="checkbox" class="filter filter-type" id="xd" value="Xd">XD
+				</label>
+				<label class="filter-group">
+					<input type="checkbox" class="filter filter-type" id="vip" value="Vip">VIP
+				</label>
+				<label class="filter-group">
+					<input type="checkbox" class="filter filter-type" id="4d" value="4DX">4D
+				</label>
+				<label class="filter-group">
+					<input type="checkbox" class="filter filter-type" id="cinepic" value="Cinepic">Cinépic
+				</label>
+				<label class="filter-group">
+					<input type="checkbox" class="filter filter-type" id="nac" value="Nacional">NAC
+				</label>
+			</div>
+		</div>
+	</section>
+
+	<section class="movies-section">
+		<div class="container">
+			<h2 class="title">EM CARTAZ</h2>
+			<div class="movies" id="movies">
+			</div>
+		</div>
+	</section>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js	"></script>
+	<script src="js/filter.js"></script>
+	<script src="js/movies.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
